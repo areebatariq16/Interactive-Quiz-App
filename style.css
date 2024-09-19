@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --bg-color: #243e36; 
+    --snd-bg-color:#F1F7ED; 
+    --text-color: #7CA982; 
+}
+
+body{
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: var(--snd-bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#loading, #error, #quiz-container, #results {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#question {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.answer-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.answer-btn:hover {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition-duration: var(--snd-bg-color) 0.3s;
+}
+
+button:hover {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+#results h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#results p{
+    font-size: 18px;
+}
+
+
+
+/* Base styles for mobile-first design */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#quiz-container, #results {
+    text-align: center;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* Medium devices (tablets, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .container {
+        width: 80%;
+    }
+
+    button {
+        width: 50%;
+        margin: 10px auto;
+    }
+}
+
+/* Large devices (desktops, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 70%;
+    }
+
+    button {
+        width: 40%;
+    }
+}
+
+/* Extra large devices (large desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container {
+        width: 60%;
+    }
+
+    button {
+        width: 30%;
+    }
+}
+
+/* Extra extra large devices (larger desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 50%;
+    }
+
+    button {
+        width: 20%;
+    }
+}
